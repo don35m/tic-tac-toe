@@ -18,3 +18,18 @@ describe('Space', function() {
         expect(testSpace.letter).to.equal("X");
     });
 });
+
+describe('Board', function() {
+    it("creates 9 spaces when it's initialized", function() {
+        var testBoard = new Board(9);
+        var spaceArray = [];
+        for(var i = 1; i < 4; i++){
+            for(var j = 1; j < 4; j++){
+                var testSpace = new Space(i,j);
+                spaceArray.push(testSpace);
+            }
+        }
+
+        expect(testBoard.spaces).to.eql(spaceArray);
+    });
+});
