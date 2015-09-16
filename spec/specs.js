@@ -32,4 +32,18 @@ describe('Board', function() {
 
         expect(testBoard.spaces).to.eql(spaceArray);
     });
+
+    it("can find a space based on the coordinates entered", function() {
+        var testBoard = new Board(9);
+        var spaceArray = [];
+        for(var i = 1; i < 4; i++){
+            for(var j = 1; j < 4; j++){
+                var space = new Space(i,j);
+                spaceArray.push(testSpace);
+            }
+        }
+        var testSpace = new Space(1,2);
+
+        expect(testBoard.find(1,2)).to.eql(testSpace);
+    });
 });

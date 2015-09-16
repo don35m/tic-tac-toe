@@ -28,3 +28,11 @@ function Board(number) {
         }
     }
 }
+
+Board.prototype.find = function(searchX, searchY){
+    for(var i in this.spaces){
+        if((this.spaces[i].xCoordinate == searchX) && (this.spaces[i].yCoordinate == searchY)) {
+            return this.spaces[i];
+        }
+    }
+}
