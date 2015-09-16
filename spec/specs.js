@@ -47,3 +47,14 @@ describe('Board', function() {
         expect(testBoard.find(1,2)).to.eql(testSpace);
     });
 });
+
+describe('Game', function() {
+    it("switches between players for each turn", function() {
+        var testPlayer1 = new Player("X");
+        var testPlayer2 = new Player("O");
+        var testBoard = new Board(9);
+        var testGame = new Game(testPlayer1, testPlayer2, testBoard);
+        testGame.turn();
+        expect(testGame.activePlayer).to.equal(testPlayer2);
+    });
+});

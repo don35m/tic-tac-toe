@@ -36,3 +36,18 @@ Board.prototype.find = function(searchX, searchY){
         }
     }
 }
+
+function Game(player1, player2, board) {
+    this.player1 = player1;
+    this.player2 = player2;
+    this.activePlayer = player1;
+    this.board = board;
+}
+
+Game.prototype.turn = function() {
+    if(this.activePlayer == this.player1) {
+        this.activePlayer = this.player2;
+    } else {
+        this.activeplayer = this.player1;
+    }
+}
