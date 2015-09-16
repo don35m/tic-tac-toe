@@ -1,7 +1,6 @@
 # _Tic-Tac-Toe_
 
-##### _App in JavaScript similar to a tic-tac-toe
-game, 9/16/15_
+##### _App in JavaScript similar to a tic-tac-toe game, 9/16/15_
 
 #### By _**Don Schemmel & Tyler Deem**_
 
