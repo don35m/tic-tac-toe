@@ -12,3 +12,7 @@ function Space(xCoordinate, yCoordinate, letter){
     }
 
 }
+
+Space.prototype.markBy = function(player) {
+    this.letter = player.mark;
+}
